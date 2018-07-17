@@ -35,5 +35,7 @@
 
 ![](https://github.com/huangguixin/schoolshop/blob/master/src/%E6%95%88%E6%9E%9C%E5%9B%BE/%E5%BA%97%E5%AE%B6%E5%90%8E%E5%8F%B0%E4%BF%A1%E6%81%AF%E9%A1%B5.png)
 
-（4）	点击商品管理
+(5)点击类别管理
+
+![](https://github.com/huangguixin/schoolshop/blob/master/src/%E6%95%88%E6%9E%9C%E5%9B%BE/%E5%95%86%E5%93%81%E7%B1%BB%E5%88%AB%E9%A1%B5%E9%9D%A2.png)
 
