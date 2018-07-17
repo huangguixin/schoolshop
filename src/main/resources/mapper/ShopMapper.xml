@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gk.mapper.ShopMapper">
+
+    <!-- 开启二级缓存 -->
+    <!-- <cache type="org.mybatis.caches.ehcache.LoggingEhcache"/>
+ -->
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.gk.entity.Shop">
+        <id column="shop_id" property="shopId" />
+        <result column="shop_name" property="shopName" />
+        <result column="shop_desc" property="shopDesc" />
+        <result column="shop_img" property="shopImg" />
+        <result column="shop_create_time" property="shopCreateTime" />
+        <result column="shop_edit_time" property="shopEditTime" />
+        <result column="shop_advice" property="shopAdvice" />
+        <result column="shop_address" property="shopAddress" />
+        <result column="shop_phone" property="shopPhone" />
+        <result column="area_id" property="areaId" />
+        <result column="shopcategory_id" property="shopcategoryId" />
+        <result column="user_id" property="userId" />
+        <result column="shop_priority" property="shopPriority" />
+        <result column="shop_enable_status" property="shopEnableStatus" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        shop_id, shop_name, shop_desc, shop_img, shop_create_time, shop_edit_time, shop_advice, shop_address, shop_phone, area_id, shopcategory_id, user_id, shop_priority, shop_enable_status
+    </sql>
+
+</mapper>

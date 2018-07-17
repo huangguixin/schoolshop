@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gk.mapper.HeadlineMapper">
+
+    <!-- 开启二级缓存 -->
+    <!-- <cache type="org.mybatis.caches.ehcache.LoggingEhcache"/> -->
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.gk.entity.Headline">
+        <id column="head_id" property="headId" />
+        <result column="head_name" property="headName" />
+        <result column="head_img" property="headImg" />
+        <result column="head_link" property="headLink" />
+        <result column="head_create_time" property="headCreateTime" />
+        <result column="head_edit_time" property="headEditTime" />
+        <result column="head_enable_status" property="headEnableStatus" />
+        <result column="head_priority" property="headPriority" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        head_id, head_name, head_img, head_link, head_create_time, head_edit_time, head_enable_status, head_priority
+    </sql>
+
+</mapper>

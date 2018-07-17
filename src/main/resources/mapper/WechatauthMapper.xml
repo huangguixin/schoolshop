@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gk.mapper.WechatauthMapper">
+
+    <!-- 开启二级缓存 -->
+   <!--  <cache type="org.mybatis.caches.ehcache.LoggingEhcache"/>
+ -->
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.gk.entity.Wechatauth">
+        <id column="we_chat_id" property="weChatId" />
+        <result column="we_chat_open_id" property="weChatOpenId" />
+        <result column="we_chat_create_time" property="weChatCreateTime" />
+        <result column="user_id" property="userId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        we_chat_id, we_chat_open_id, we_chat_create_time, user_id
+    </sql>
+
+</mapper>

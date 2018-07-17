@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gk.mapper.ProductimgMapper">
+
+    <!-- 开启二级缓存 -->
+    <!-- <cache type="org.mybatis.caches.ehcache.LoggingEhcache"/>
+ -->
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.gk.entity.Productimg">
+        <id column="product_img_id" property="productImgId" />
+        <result column="product_img_address" property="productImgAddress" />
+        <result column="product_img_desc" property="productImgDesc" />
+        <result column="product_img_create_time" property="productImgCreateTime" />
+        <result column="product_id" property="productId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        product_img_id, product_img_address, product_img_desc, product_img_create_time, product_id
+    </sql>
+
+</mapper>
