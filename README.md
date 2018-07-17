@@ -1,6 +1,8 @@
 # schoolshop
 校园商铺
 
+使用的技术是Spring  SpringMVC  MybaitsPlus  JS  Maven等
+
 1.	前段展示系统
 
 （1）首页
